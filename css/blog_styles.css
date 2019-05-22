@@ -1,0 +1,191 @@
+@import url(animate.css);
+.blog {
+  background-color: #f9f9fb;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  letter-spacing: 0.4px; }
+  .blog.blog-detailed .card-columns {
+    column-count: 1; }
+  .blog.blog-detailed .stars {
+    font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .blog.blog-detailed .stars li {
+      cursor: pointer;
+      opacity: .7; }
+      .blog.blog-detailed .stars li:not(:last-child) {
+        margin-right: 3px; }
+    .blog.blog-detailed .stars [class^="fa"] {
+      font-size: 13px; }
+    .blog.blog-detailed .stars.is-active {
+      opacity: 1; }
+  .blog .btn_resize-cards {
+    height: 42px;
+    background-color: #212121;
+    color: #fff;
+    border-radius: 0;
+    font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    border: 2px solid #212121;
+    transition: .2s; }
+    .blog .btn_resize-cards:hover, .blog .btn_resize-cards:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: #fff;
+      color: #212121;
+      border: 2px solid #212121; }
+  .blog .video {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 45.5%;
+    padding-top: 30px;
+    height: 0; }
+    .blog .video iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0; }
+  .blog .text-grey {
+    color: #999999; }
+  .blog .card-columns {
+    column-count: 3; }
+    @media screen and (max-width: 992px) {
+      .blog .card-columns {
+        column-count: 2; } }
+    @media screen and (max-width: 768px) {
+      .blog .card-columns {
+        column-count: 1; } }
+    .blog .card-columns.resize-cards {
+      column-count: 1; }
+      .blog .card-columns.resize-cards .card-top {
+        max-height: 450px;
+        overflow: hidden; }
+  .blog .overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .blog .card-post {
+    border-radius: 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+    transform: translateZ(0);
+    margin-top: 30px;
+    text-align: center;
+    border: none;
+    color: #464646;
+    background-color: #fff;
+    transition: all .3s; }
+    .blog .card-post:hover {
+      box-shadow: 0 3px 29px 12px rgba(112, 112, 112, 0.2); }
+    .blog .card-post.bg-1 {
+      background: url("../images/blog/bg.jpg") center center no-repeat;
+      background-size: cover; }
+    .blog .card-post .card-content {
+      border-bottom: 1px solid #f7f7f7;
+      transform: translateZ(0); }
+    .blog .card-post .meta {
+      background-color: #212121;
+      width: 40px;
+      height: 40px;
+      top: -20px;
+      left: calc(50% - 20px);
+      box-shadow: 0px 0px 2.97px 0.03px rgba(0, 0, 0, 0.2); }
+      .blog .card-post .meta .fas,
+      .blog .card-post .meta .fab,
+      .blog .card-post .meta .fa,
+      .blog .card-post .meta .far {
+        color: #fff;
+        font-size: 15px; }
+    .blog .card-post.is-inverse {
+      color: #fff;
+      background-color: #212429;
+      position: relative; }
+      .blog .card-post.is-inverse .card-content {
+        border-bottom: none; }
+      .blog .card-post.is-inverse .title {
+        color: #fff; }
+      .blog .card-post.is-inverse .meta {
+        background-color: #fff; }
+        .blog .card-post.is-inverse .meta .fas,
+        .blog .card-post.is-inverse .meta .fab,
+        .blog .card-post.is-inverse .meta .fa,
+        .blog .card-post.is-inverse .meta .far {
+          color: #464646; }
+      .blog .card-post.is-inverse a {
+        color: #fff; }
+    .blog .card-post a {
+      color: #464646; }
+    .blog .card-post .title {
+      font-size: 20px;
+      color: #212121;
+      font-weight: bold; }
+    .blog .card-post .date,
+    .blog .card-post .sup-title {
+      font-size: 14px;
+      font-family: 'Hind', sans-serif; }
+    .blog .card-post .btn-primary {
+      background-color: transparent;
+      color: #212121;
+      border: none;
+      font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      padding: 8px 14px;
+      transition: all .3s;
+      position: relative; }
+      .blog .card-post .btn-primary::before, .blog .card-post .btn-primary::after {
+        content: '';
+        height: 30px;
+        background-color: #999999;
+        width: 1px;
+        display: block;
+        position: absolute;
+        transition: height .3s; }
+      .blog .card-post .btn-primary::before {
+        left: 0;
+        top: calc(50% - 15px); }
+      .blog .card-post .btn-primary::after {
+        right: 0;
+        top: calc(50% - 15px); }
+      .blog .card-post .btn-primary:hover, .blog .card-post .btn-primary:focus, .blog .card-post .btn-primary:active {
+        outline: none;
+        box-shadow: none !important;
+        border: none;
+        background-color: #fff;
+        color: #999999; }
+        .blog .card-post .btn-primary:hover::before, .blog .card-post .btn-primary:hover::after, .blog .card-post .btn-primary:focus::before, .blog .card-post .btn-primary:focus::after, .blog .card-post .btn-primary:active::before, .blog .card-post .btn-primary:active::after {
+          transition: width .3s;
+          width: 30px;
+          height: 1px; }
+        .blog .card-post .btn-primary:hover::before, .blog .card-post .btn-primary:focus::before, .blog .card-post .btn-primary:active::before {
+          top: 0;
+          bottom: auto;
+          left: calc(50% - 15px); }
+        .blog .card-post .btn-primary:hover::after, .blog .card-post .btn-primary:focus::after, .blog .card-post .btn-primary:active::after {
+          bottom: 0;
+          top: auto;
+          left: calc(50% - 15px); }
+    .blog .card-post .fa,
+    .blog .card-post .fas,
+    .blog .card-post .fab {
+      font-size: 16px;
+      color: #464646; }
+    .blog .card-post .social-list a {
+      padding: 3px;
+      font-size: 20px;
+      color: #464646;
+      display: inline-block;
+      transition: all .2s; }
+      .blog .card-post .social-list a:hover {
+        transform: scale(1.2); }
+      .blog .card-post .social-list a:not(:last-child) {
+        margin-right: 5px; }
+    .blog .card-post .card-bottom .comments {
+      font-size: 14px;
+      font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      @media screen and (max-width: 1200px) {
+        .blog .card-post .card-bottom .comments {
+          font-size: 13px; } }
+
+/*# sourceMappingURL=blog_styles.css.map */
